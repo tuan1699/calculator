@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 350px;
+  background-color: black;
+  min-height: 500px;
+  border-radius: 20px;
+  padding-top: 60px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.display {
+  padding: 30px;
+  height: 150px;
+}
+.display-input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 24px;
+}
+
+.display-output {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.operator {
+  color: #26fad3;
+}
+
+.display-input .cal-key {
+  margin: 0px 10px;
+  color: #f17979;
+}
+
+.key.cal-key {
+  color: #f17979;
+  font-size: 24px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 30px;
+  background-color: #292d36;
+}
+
+.key {
+  background-color: #272b33;
+  padding-top: 100%;
+  position: relative;
+  box-shadow: rgba(117, 95, 95, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.key:hover {
+  box-shadow: rgba(191, 191, 191, 0.5) 0px 2px 8px 0px inset;
+}
+
+.key span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
